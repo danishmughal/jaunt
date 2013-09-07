@@ -1,0 +1,3 @@
+== Jaunt
+
+Collaborative event planning, IEEE @ UIUC Hackathon 2013.
