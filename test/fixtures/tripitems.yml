@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  trip_id: 1
+  description: MyString
+  location: MyString
+  start_time: 2013-09-07 10:27:00
+  end_time: 2013-09-07 10:27:00
+
+two:
+  trip_id: 1
+  description: MyString
+  location: MyString
+  start_time: 2013-09-07 10:27:00
+  end_time: 2013-09-07 10:27:00

@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Trip:</strong>
+  <%= @tripitem.trip_id %>
+</p>
+
+<p>
+  <strong>Description:</strong>
+  <%= @tripitem.description %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @tripitem.location %>
+</p>
+
+<p>
+  <strong>Start time:</strong>
+  <%= @tripitem.start_time %>
+</p>
+
+<p>
+  <strong>End time:</strong>
+  <%= @tripitem.end_time %>
+</p>
+
+<%= link_to 'Edit', edit_tripitem_path(@tripitem) %> |
+<%= link_to 'Back', tripitems_path %>

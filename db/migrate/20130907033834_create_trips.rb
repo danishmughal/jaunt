@@ -8,6 +8,9 @@ class CreateTrips < ActiveRecord::Migration
       t.string :destination
       t.integer :user_id
       
+      t.string :slug
+
+
       t.timestamps
     end
   end

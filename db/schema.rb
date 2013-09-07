@@ -11,7 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130907033834) do
+ActiveRecord::Schema.define(version: 20130907172659) do
+
+  create_table "tripitems", force: true do |t|
+    t.integer  "trip_id"
+    t.string   "description"
+    t.string   "location"
+    t.datetime "start_time"
+    t.datetime "end_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "trips", force: true do |t|
     t.string   "title"
@@ -20,6 +30,7 @@ ActiveRecord::Schema.define(version: 20130907033834) do
     t.datetime "return_time"
     t.string   "destination"
     t.integer  "user_id"
+    t.string   "slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

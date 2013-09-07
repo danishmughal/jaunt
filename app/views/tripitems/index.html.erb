@@ -1,0 +1,35 @@
+<h1>Listing tripitems</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Trip</th>
+      <th>Description</th>
+      <th>Location</th>
+      <th>Start time</th>
+      <th>End time</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @tripitems.each do |tripitem| %>
+      <tr>
+        <td><%= tripitem.trip_id %></td>
+        <td><%= tripitem.description %></td>
+        <td><%= tripitem.location %></td>
+        <td><%= tripitem.start_time %></td>
+        <td><%= tripitem.end_time %></td>
+        <td><%= link_to 'Show', tripitem %></td>
+        <td><%= link_to 'Edit', edit_tripitem_path(tripitem) %></td>
+        <td><%= link_to 'Destroy', tripitem, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Tripitem', new_tripitem_path %>
